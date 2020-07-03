@@ -5,16 +5,18 @@
     <div id="chat-messages" class="message-group" v-chat-scroll="{smooth: true}">
       <div class="message" v-for="(message, index) in messages" :key="index">
         <div class="clearfix">
-          <h4 class="message-title">{{ message.name }}</h4>
-          <small class="text-muted float-right">@{{ message.username }}</small>
+          <h4 class="message-title float-right">@{{ message.name }}</h4>
         </div>
-        <p class="message-text">
+        <p class="message-text float-left">
           {{ message.text }}
         </p>
         <div class="clearfix">
           <small class="text-muted float-right">{{ message.date }}</small>
         </div>
       </div>
+    </div>
+    <div class="user-typing">
+      <small class="text-muted" v-if="userTyping">@{{ userTyping }} is typing....</small>
     </div>
   </div>
 </template>
@@ -27,6 +29,7 @@ export default {
   computed: {
     ...mapState([
       'messages',
+      'userTyping'
     ])
   }
 }
@@ -42,8 +45,8 @@ export default {
   overflow-y: scroll;
 }
 .message {
-  border: 2px solid #80d9e0;
-  background-color:#99e0e6;
+  border: 2px solid #00acb6;
+  background-color:#00b5bf;
   color: #fff;
   border-radius: 5px;
   padding: 10px;
@@ -55,7 +58,7 @@ export default {
   display:inline;
 }
 .message-text {
-  color: gray;
+  color: white;
   margin-bottom: 0;
 }
 .user-typing {

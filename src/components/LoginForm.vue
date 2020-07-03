@@ -10,7 +10,7 @@
             </b-form-input>
         </b-form-group>
 
-        <b-button type="submit" variant="primary" class="ld-ext-right" v-bind:class="{ running: loading }" :disabled="isValid">
+        <b-button type="submit" variant="primary" class="buttonblue ld-ext-right" v-bind:class="{ running: loading }" :disabled="isValid">
             Login <div class="ld ld-ring ld-spin"></div>
         </b-button>
     </b-form>
@@ -58,4 +58,13 @@ export default {
         ])
     }
 }
+//#1fd4de!important;
 </script>
+
+<style>
+    .buttonblue {
+        background-color: #17a2b8 !important;
+        border: 2px solid #17a2b8 !important;
+    }
+</style>
+

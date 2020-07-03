@@ -1,11 +1,11 @@
 <template>
   <div class="login">
     <b-jumbotron  header="Vue.js Chat"
-                  lead="Powered by Talkjs and Bootstrap-Vue"
+                  lead="Powered by Twilio and Bootstrap-Vue"
                   bg-variant="info"
                   text-variant="white">
       <p>For more information visit website</p>
-      <b-btn target="_blank" href="https://talkjs.com/">More Info</b-btn>
+      <b-btn target="_blank" href="https://twilio.com/">More Info</b-btn>
     </b-jumbotron>
     <b-container>
       <b-row>
@@ -29,3 +29,8 @@ export default {
   }
 }
 </script>
+
+<style>
+
+</style>
+
