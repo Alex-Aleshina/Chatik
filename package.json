@@ -12,7 +12,7 @@
     "core-js": "^3.6.5",
     "moment": "^2.26.0",
     "twilio": "^3.47.0",
-    "twilio-chat": "^3.4.0",
+    "twilio-chat": "^6.0.0",
     "vue": "^2.6.11",
     "vue-chat-scroll": "^1.4.0",
     "vue-router": "^3.2.0",
